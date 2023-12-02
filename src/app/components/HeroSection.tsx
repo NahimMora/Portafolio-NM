@@ -6,11 +6,11 @@ import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className='h-full md:h-screen'>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
         <motion.div initial={{opacity:0, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration:0.5}} 
-        className=' col-span-7 place-self-center text-center sm:text-left'>
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+        className='col-span-7 place-self-center text-center sm:text-left'>
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold md:h-32">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
               Buenas! Soy {""}
             </span>
@@ -18,17 +18,17 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 'Nahim Mora',
-                1000,
+                1000, // Delay before repeating
                 'FullStack Developer',
-                1000
+                1000, // Delay before repeating
               ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
-          <p className=' text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non exercitationem iste alias blanditiis explicabo natus corporis voluptatum, amet ipsam voluptate omnis.
+          <p className=' text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl mt-20 xsm:mt-0'>
+            Constructor digital de experiencias únicas. Fusiono código y creatividad para dar vida a soluciones web que desafían lo convencional. En constante búsqueda de la próxima innovación. ❤️
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>
@@ -58,4 +58,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default HeroSection;
