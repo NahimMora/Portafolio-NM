@@ -32,11 +32,11 @@ const Navbar = () => {
         </Link>
         <div className=' mobile-menu block md:hidden'>
           {!navbarOpen ? (
-          <button onClick={() => setNavbarOpen(true)} className=' flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+          <button onClick={() => setNavbarOpen(true)} className=' flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-purple-500 hover:border-purple-500'>
             <Bars3Icon className='h-5 w-5'/>
           </button>
           ) : (
-            <button onClick={() => setNavbarOpen(false)} className=' flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+            <button onClick={() => setNavbarOpen(false)} className=' flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-yellow-500 hover:border-yellow-500'>
             <XMarkIcon className='h-5 w-5'/>
           </button>
           )}
