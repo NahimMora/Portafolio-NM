@@ -40,8 +40,8 @@ const ProjectsSections = () => {
   }  
 
   return (
-    <section>
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section id='proyects'>
+        <h2 className="text-center text-4xl font-bold py-16 text-white mt-4 mb-8 md:mb-12">
             Mis Proyectos
         </h2>
         <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
