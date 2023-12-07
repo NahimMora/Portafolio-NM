@@ -13,7 +13,7 @@ const TAB_DATA: TabData[] = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className='list-disc pl-2 grid grid-cols-3'>
+      <ul className='list-disc pl-2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3'>
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>Python</li>
@@ -58,6 +58,7 @@ const TabButton = ({ selectTab, active, children }: { selectTab: () => void; act
 const AboutSection = () => {
   const [tab, setTab] = useState<string>("skills");
   const [isPending, startTransition] = useTransition();
+  const [windowWidth, setWindowWidth] = useState(0);
 
   const handleTabChange = (id: string) => {
     startTransition(() => {
@@ -65,18 +66,18 @@ const AboutSection = () => {
     });
   };
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
 
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
 
