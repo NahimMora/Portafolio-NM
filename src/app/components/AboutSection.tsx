@@ -1,6 +1,16 @@
 "use client"
 import Image from 'next/image';
 import React, { ReactNode, useState, useTransition, useEffect } from 'react';
+import IconJs from '../../../public/icons/javascript.svg';
+import IconTs from '../../../public/icons/typescript.svg';
+import IconPy from '../../../public/icons/python.svg';
+import IconRc from  '../../../public/icons/react.svg'
+import IconNx from '../../../public/icons/next.svg'
+import IconNd from '../../../public/icons/nodejs.svg';
+import IconEx from '../../../public/icons/express.svg';
+import IconSq from '../../../public/icons/sequelize.svg';
+import IconPs from '../../../public/icons/postgresql.svg';
+import SoyHenry from '../../../public/icons/SoyHenry.jpeg'
 
 interface TabData {
   title: string;
@@ -13,16 +23,16 @@ const TAB_DATA: TabData[] = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className='list-disc pl-2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3'>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>Python</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>Sequelize</li>
-        <li>PostgreSQL</li>
+      <ul className='pl-2 grid grid-cols-3'>
+        <Image src={IconJs} alt='IconJs' className='m-2'/>
+        <Image src={IconTs} alt='IconTs' className='m-2' />
+        <Image src={IconPy} alt='IconPy' className='m-2' />
+        <Image src={IconRc} alt='IconRc' className='m-2' />
+        <Image src={IconNx} alt='IconNx' className='m-2' />
+        <Image src={IconNd} alt='IconNd' className='m-2' />
+        <Image src={IconEx} alt='IconEx' className='m-2' />
+        <Image src={IconSq} alt='IconSq' className='m-2' />
+        <Image src={IconPs} alt='IconPs' className='m-2' />
       </ul>
     ),
   },
@@ -30,8 +40,15 @@ const TAB_DATA: TabData[] = [
     title: "Education",
     id: "education",
     content: (
-      <ul className='list-disc pl-2'>
-        <li>FullStack Developer - Henry</li>
+      <ul className='pl-2'>
+        <li>
+          <div className='flex items-center'>
+          <Image src={SoyHenry} alt='IconSH'height={50} 
+          className='m-2'
+          />
+          FullStack Developer - Henry
+          </div>
+        </li>
       </ul>
     ),
   },
@@ -82,7 +99,7 @@ const AboutSection = () => {
 
 
   return (
-    <section className='text-white ' id='About'>
+    <section className='text-white ' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
       {windowWidth >= 640 ?
       <Image src={"/images/about-image.png"} width={500} height={500} alt='AboutImage'/>
@@ -100,7 +117,7 @@ const AboutSection = () => {
               </TabButton>
             ))}
           </div>
-          <div className=' mt-8'>{TAB_DATA.find((t) => t.id === tab)?.content}</div>
+          <div className='m-8'>{TAB_DATA.find((t) => t.id === tab)?.content}</div>
         </div>
       </div>
     </section>
