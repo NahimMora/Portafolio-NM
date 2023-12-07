@@ -10,7 +10,8 @@ import IconNd from '../../../public/icons/nodejs.svg';
 import IconEx from '../../../public/icons/express.svg';
 import IconSq from '../../../public/icons/sequelize.svg';
 import IconPs from '../../../public/icons/postgresql.svg';
-import SoyHenry from '../../../public/icons/SoyHenry.jpeg'
+import SoyHenry from '../../../public/icons/SoyHenry.jpeg';
+import AboutImage from '../../../public/images/About-image.png';
 
 interface TabData {
   title: string;
@@ -102,7 +103,7 @@ const AboutSection = () => {
     <section className='text-white ' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
       {windowWidth >= 640 ?
-      <Image src={"/images/about-image.png"} width={500} height={500} alt='AboutImage'/>
+      <Image src={AboutImage} width={500} height={500} alt='AboutImage'/>
       : ""}
       <div className=' mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-purple-900'>Sobre mi</h2>
