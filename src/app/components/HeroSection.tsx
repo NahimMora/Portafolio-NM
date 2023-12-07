@@ -5,8 +5,19 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
+
+  const cvUrl = '/CV-NahimMora.pdf';
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'CV-NahimMora.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <section className='h-full md:h-screen'>
+    <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
         <motion.div initial={{opacity:0, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration:0.5}} 
         className='col-span-7 place-self-center text-center sm:text-left'>
@@ -18,9 +29,9 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 'Nahim Mora',
-                1000, // Delay before repeating
+                1000,
                 'FullStack Developer',
-                1000, // Delay before repeating
+                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -32,10 +43,13 @@ const HeroSection = () => {
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>
-              Hire Me
+              Contactame
             </button>
-            <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 mt-3'>
-              <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
+            <button 
+            className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 mt-3'
+            onClick={downloadCV}
+            >
+              <span className='text-white block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
                 Descargar CV
               </span>
             </button>

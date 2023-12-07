@@ -6,27 +6,27 @@ import { motion, useInView } from 'framer-motion';
 const projectsData = [
     {
         id: 1,
-        title: "Aplicacion e-commerce",
-        description: "Project 1 description",
+        title: "Las Encimas Boutique",
+        description: "E-commerce completo que abarca todas las actividades relacionadas con la compra y venta de los productos.",
         image: "/images/projects/1.png",
         gitUrl: "https://github.com/thomasrey99/Las-Encinas-Boutique-",
         previewURL: "https://las-encinas-boutique-omega.vercel.app/home"
     },
     {
         id: 2,
-        title: "Aplicacion e-commerce",
-        description: "Project 1 description",
-        image: "/images/projects/1.png",
-        gitUrl: "https://github.com/thomasrey99/Las-Encinas-Boutique-",
-        previewURL: "https://las-encinas-boutique-omega.vercel.app/home"
+        title: "CountriesInfo",
+        description: "SPA: Explora, descubre y conecta con informacion de todos los paises, con multiples funciones.",
+        image: "/images/projects/2.png",
+        gitUrl: "https://github.com/NahimMora/PI-Countries",
+        previewURL: ""
     },
     {
         id: 3,
-        title: "Aplicacion e-commerce",
-        description: "Project 1 description",
-        image: "/images/projects/1.png",
-        gitUrl: "https://github.com/thomasrey99/Las-Encinas-Boutique-",
-        previewURL: "https://las-encinas-boutique-omega.vercel.app/home"
+        title: "Social-App",
+        description: "Conecta y explora con usuarios de todos los países, disfrutando de diversas funciones para una experiencia única.",
+        image: "/images/projects/3.png",
+        gitUrl: "https://github.com/NahimMora/Social-App",
+        previewURL: ""
     }
 ]
 

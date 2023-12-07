@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import React, { ReactNode, useState, useTransition } from 'react';
+import React, { ReactNode, useState, useTransition, useEffect } from 'react';
 
 interface TabData {
   title: string;
@@ -65,11 +65,28 @@ const AboutSection = () => {
     });
   };
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   return (
-    <section className='text-white '>
+    <section className='text-white ' id='About'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+      {windowWidth >= 640 ?
       <Image src={"/images/about-image.png"} width={500} height={500} alt='AboutImage'/>
-        <div className=' mt-4 md:mt-0 text-left flex flex-col h-full'>
+      : ""}
+      <div className=' mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>Sobre mi</h2>
           <p className='text-base lg:text-lg'>
             Destaco en el desarrollo de aplicaciones web interactivas y escalables 🚀.
