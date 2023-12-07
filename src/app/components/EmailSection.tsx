@@ -12,7 +12,7 @@ const EmailSection: React.FC = () => {
 
     const form = useRef<HTMLFormElement>(null);
 
-    const showSweetAlert = () => {
+    const showSweetAlertSuccess = () => {
         Swal.fire({
           position: 'center',
           icon: 'success',
@@ -23,17 +23,29 @@ const EmailSection: React.FC = () => {
           timer: 1500,
         });
       };
+    
+    const showSweetAlertError = () => {
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        iconColor: 'purple',
+        background: 'ADB7BE',
+        title: 'Error al enviar el correo, intentalo de nuevo',
+        showConfirmButton: false,
+        timer: 2500,
+      });
+    };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         form.current ?
             emailjs.sendForm('service_qojv8fd', 'template_1wm4are', form.current, '7kO-U-3SDy_TU3ZVo')
                 .then(
-                    (result) => {showSweetAlert()},
-                    (error) => {showSweetAlert}
+                    (result) => {showSweetAlertSuccess()},
+                    (error) => {showSweetAlertError()}
                 )
         :
-        "error"
+        showSweetAlertError()
     };
 
   return (
@@ -43,14 +55,14 @@ const EmailSection: React.FC = () => {
             <h5 className=' text-xl font-bold text-white my-2'>Contactame!</h5>
             <p className='text-[#ADB7BE mb-4 max-w-md'>
                 {""}
-                Estoy dispuesto a nuevas oportunidades, mi correo esta siempre abierto.
-                Cualquier consulta estare para saludarlo, dame un toque.
+                Listo para explorar nuevas oportunidades y desafíos. ¡No dudes en ponerte en contacto! Estoy emocionado 
+                por las posibilidades que puedan surgir. ¡Hablemos pronto!
             </p>
             <div className='socials flex flex-row gap-2'>
-                <Link href="github.com">
+                <Link href="https://github.com/NahimMora">
                     <Image src={GithubIcon} alt="GitHub icon"/>
                 </Link>
-                <Link href="linkedin.com">
+                <Link href="https://linkedin.com/in/fernando-nahim-mora-developer">
                     <Image src={LinkedinIcon} alt="Linkedin icon"/>
                 </Link>
             </div>
