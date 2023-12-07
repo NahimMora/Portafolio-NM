@@ -31,7 +31,7 @@ const TAB_DATA: TabData[] = [
         <Image src={IconNx} alt='IconNx' className='m-2' />
         <Image src={IconNd} alt='IconNd' className='m-2' />
         <Image src={IconEx} alt='IconEx' className='m-2' />
-        <Image src={IconSq} alt='IconSq' className='m-2' />
+        <Image src={IconSq} alt='IconSq' width={50} className='m-2' />
         <Image src={IconPs} alt='IconPs' className='m-2' />
       </ul>
     ),
@@ -105,7 +105,7 @@ const AboutSection = () => {
       <Image src={"/images/about-image.png"} width={500} height={500} alt='AboutImage'/>
       : ""}
       <div className=' mt-4 md:mt-0 text-left flex flex-col h-full'>
-          <h2 className='text-4xl font-bold text-white mb-4'>Sobre mi</h2>
+          <h2 className='text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-purple-900'>Sobre mi</h2>
           <p className='text-base lg:text-lg'>
             Destaco en el desarrollo de aplicaciones web interactivas y escalables 🚀.
             Mi enfoque va más allá del código. Creo en la atención al detalle, el trabajo en equipo y la entrega de soluciones. Siempre en búsqueda de nuevos desafíos y oportunidades para mejorar. ❤️

@@ -52,7 +52,7 @@ const EmailSection: React.FC = () => {
     <section className='grid md:grid-cols-2 my-12 p-24 gap-4 relative' id={'contact'}>
         <div className=' bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
         <div className='z-10'>
-            <h5 className=' text-xl font-bold text-white my-2'>Contactame!</h5>
+            <h5 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-purple-900'>Contactame!</h5>
             <p className='text-[#ADB7BE mb-4 max-w-md'>
                 {""}
                 Listo para explorar nuevas oportunidades y desafíos. ¡No dudes en ponerte en contacto! Estoy emocionado 
@@ -79,7 +79,7 @@ const EmailSection: React.FC = () => {
             type='text' 
             id='user_name' 
             required
-            className='bg-[#181818] border border-["33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
+            className='bg-[#181818] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
             placeholder='Nombre'
             />
             </div>
@@ -93,7 +93,7 @@ const EmailSection: React.FC = () => {
             type='email' 
             id='user_email' 
             required
-            className='bg-[#181818] border border-["33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
+            className='bg-[#181818] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
             placeholder='example@example.com'
             />
             </div>
@@ -106,7 +106,7 @@ const EmailSection: React.FC = () => {
             name='message' 
             id='message' 
             required
-            className='bg-[#181818] border border-["33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
+            className='bg-[#181818] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
             placeholder='Hablemos sobre ello...'
             />
             </div>
