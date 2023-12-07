@@ -10,8 +10,8 @@ import IconNd from '../../../public/icons/nodejs.svg';
 import IconEx from '../../../public/icons/express.svg';
 import IconSq from '../../../public/icons/sequelize.svg';
 import IconPs from '../../../public/icons/postgresql.svg';
-import SoyHenry from '../../../public/icons/SoyHenry.jpeg'
-import AboutImage from '../../../public/images/About-image.png'
+import SoyHenry from '../../../public/icons/SoyHenry.jpeg';
+import AboutImage from '../../../public/images/About-image.png';
 
 interface TabData {
   title: string;
