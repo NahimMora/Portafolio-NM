@@ -67,10 +67,11 @@ const TAB_DATA: TabData[] = [
 const TabButton = ({ selectTab, active, children }: { selectTab: () => void; active: boolean; children: ReactNode }) => (
   <button
     onClick={selectTab}
-    className={`px-4 py-2 mr-4 text-white focus:outline-none ${active ? 'border-b-2 border-white' : ''}`}
+    className={`px-4 py-2 mr-4 text-white focus:outline-none hover:text-yellow-300 ${active ? 'border-b-2 border-yellow-600 text-yellow-500' : ''}`}
   >
     {children}
   </button>
+  
 );
 
 const AboutSection = () => {
@@ -105,7 +106,7 @@ const AboutSection = () => {
       {windowWidth >= 640 ?
       <Image src={AboutImage} width={500} height={500} alt='AboutImage'/>
       : ""}
-      <div className=' mt-4 md:mt-0 text-left flex flex-col h-full'>
+      <div className=' mt-4 md:mt-10 text-left flex flex-col h-full'>
           <h2 className='text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-purple-900'>Sobre mi</h2>
           <p className='text-base lg:text-lg'>
             Destaco en el desarrollo de aplicaciones web interactivas y escalables 🚀.
