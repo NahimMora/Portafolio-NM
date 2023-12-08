@@ -49,11 +49,11 @@ const EmailSection: React.FC = () => {
     };
 
   return (
-    <section className='grid md:grid-cols-2 my-12 p-24 gap-4 relative' id={'contact'}>
+    <section className='grid md:grid-cols-2 my-12 md:p-24 gap-4 relative' id={'contact'}>
         <div className=' bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
         <div className='z-10'>
             <h5 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-purple-900'>Contactame!</h5>
-            <p className='text-[#ADB7BE mb-4 max-w-md'>
+            <p className='text-white mb-4 max-w-md'>
                 {""}
                 Listo para explorar nuevas oportunidades y desafíos. ¡No dudes en ponerte en contacto! Estoy emocionado 
                 por las posibilidades que puedan surgir. ¡Hablemos pronto!
