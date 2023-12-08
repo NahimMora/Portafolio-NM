@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mi Portafolio
 
-## Getting Started
+¡Hola! Soy Nahim Mora, un desarrollador web con experiencia en FrontEnd, BackEnd y Base de datos. Este es mi portafolio, donde comparto algunos de mis proyectos y logros.
 
-First, run the development server:
+## Acerca de mí
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Me considero un constructor digital de experiencias únicas. Fusiono código y creatividad para dar vida a sitios web que desafían lo convencional. En constante búsqueda de la próxima innovación. ❤️
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Proyecto Destacado
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Las Encinas Boutique
+Junto a un equipo realizamos un e-commerce completo que abarca todas las actividades relacionadas con la compra y venta de los productos. Utilizando de lenguaje pricipal JavaScript y tecnologias como React, Redux, Node, Express, Sequelize y PostgreSQL
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Deploy**: https://las-encinas-boutique-omega.vercel.app/
 
-## Learn More
+## Lenguajes
 
-To learn more about Next.js, take a look at the following resources:
+- **JavaScript:** :javascript:
+- **TypeScript:** :typescript:
+- **Python:** :python:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tecnologías y Frameworks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **React:** :react:
+- **Next.js:** :nextjs:
+- **Node.js:** :nodejs:
+- **Express:** :express:
+- **Sequelize:** :sequelize:
+- **PostgreSQL:** :postgresql:
 
-## Deploy on Vercel
+## Educación
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **SoyHenry** - Desarollador FullStack (2023)
+**Certificacion:** https://certificates.soyhenry.com/new-cert?id=000d7934fa555eaeb4227fc69a57cc19805e4702cdf55c11f841210e0bb86539
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contacto
+
+- Correo electrónico: nahimsalta@gmail.com
+- LinkedIn: www.linkedin.com/in/fernando-nahim-mora-developer
+- Portafolio: https://nahimmora.vercel.app/
+
+¡Gracias por visitar mi portafolio! Si tienes alguna pregunta o estás interesado en colaborar, ¡no dudes en ponerte en contacto conmigo!
