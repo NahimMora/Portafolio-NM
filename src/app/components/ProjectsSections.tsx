@@ -14,18 +14,18 @@ const projectsData = [
     },
     {
         id: 2,
+        title: "FitnessCheck",
+        description: "Calculadoras simples para optimizar tu alimentación y bienestar. Descubre información clave para mejorar tu salud.",
+        image: "/images/projects/3.png",
+        gitUrl: "https://github.com/NahimMora/FitnessCheck",
+        previewURL: "https://fitnesscheck.vercel.app/"
+    },
+    {
+        id: 3,
         title: "CountriesInfo",
         description: "SPA: Explora, descubre y conecta con informacion de todos los paises, con multiples funciones.",
         image: "/images/projects/2.png",
         gitUrl: "https://github.com/NahimMora/PI-Countries",
-        previewURL: ""
-    },
-    {
-        id: 3,
-        title: "Social-App",
-        description: "Conecta y explora con usuarios de todos los países, disfrutando de diversas funciones para una experiencia única.",
-        image: "/images/projects/3.png",
-        gitUrl: "https://github.com/NahimMora/Social-App",
         previewURL: ""
     }
 ]

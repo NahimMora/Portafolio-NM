@@ -59,10 +59,10 @@ const EmailSection: React.FC = () => {
                 por las posibilidades que puedan surgir. ¡Hablemos pronto!
             </p>
             <div className='socials flex flex-row gap-2'>
-                <Link href="https://github.com/NahimMora">
+                <Link href="https://github.com/NahimMora" target='_blank'>
                     <Image src={GithubIcon} alt="GitHub icon"/>
                 </Link>
-                <Link href="https://linkedin.com/in/fernando-nahim-mora-developer">
+                <Link href="https://linkedin.com/in/fernando-nahim-mora-developer" target='_blank'>
                     <Image src={LinkedinIcon} alt="Linkedin icon"/>
                 </Link>
             </div>

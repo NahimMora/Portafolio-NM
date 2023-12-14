@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <footer className='footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white'>
       <div className='conteiner p-12 flex justify-around items-center'>
-        <Link href={"https://github.com/NahimMora/Portafolio-NM"}>
+        <Link href={"https://github.com/NahimMora/Portafolio-NM"} target='_blank'>
           <p className='text-transparent bg-clip-text text-white transition hover:text-yellow-500 hover:bg-clip-text'>
             Repositorio
           </p>     
