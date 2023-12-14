@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Acerca de mí 🌟
 
-## Getting Started
+Soy un desarrollador web con experiencia en FrontEnd, BackEnd y Base de datos. Me considero un constructor digital de experiencias únicas, fusionando código y creatividad para dar vida a sitios web que desafían lo convencional. En constante búsqueda de la próxima innovación. ❤️
 
-First, run the development server:
+## Proyecto Destacado 🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Las Encinas Boutique
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Junto a un equipo realizamos un e-commerce completo que abarca todas las actividades relacionadas con la compra y venta de los productos. Utilizando JavaScript como lenguaje principal y tecnologías como React, Redux, Node, Express, Sequelize y PostgreSQL.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Deploy:** [Las Encinas Boutique](https://las-encinas-boutique-omega.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Lenguajes y Habilidades 💻
 
-## Learn More
+- **JavaScript:** :javascript:
+- **TypeScript:** :typescript:
+- **Python:** :python:
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologías y Frameworks 🛠️
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **React:** :react:
+- **Next.js:** :nextjs:
+- **Node.js:** :nodejs:
+- **Express:** :express:
+- **Sequelize:** :sequelize:
+- **PostgreSQL:** :postgresql:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Educación 🎓
 
-## Deploy on Vercel
+- **SoyHenry** - Desarrollador FullStack (2023)
+  **Certificación:** [Ver Certificación](https://certificates.soyhenry.com/new-cert?id=000d7934fa555eaeb4227fc69a57cc19805e4702cdf55c11f841210e0bb86539)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contacto 📬
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Correo electrónico: [nahimsalta@gmail.com](mailto:nahimsalta@gmail.com) 📧
+- LinkedIn: [Fernando Nahim Mora - LinkedIn](https://www.linkedin.com/in/fernando-nahim-mora-developer) 🔗
+- Portafolio: [nahimmora.vercel.app](https://nahimmora.vercel.app/) 🌐
+
+¡Gracias por visitar mi portafolio! Si tienes alguna pregunta o estás interesado en colaborar, ¡no dudes en ponerte en contacto conmigo! 👋✨
